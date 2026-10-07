@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { Reveal } from './Motion'
 import Icon from './Icon'
-import { testimonials, guides, faqs, images, BUSINESS, MAIN_SITE } from '../data/content'
+import { testimonials, faqs, images, BUSINESS } from '../data/content'
 import { PhoneLink } from './Navbar'
 
 const initials = (n) => n.split(' ').map((p) => p[0]).slice(0, 2).join('')
@@ -21,7 +21,7 @@ export function Reviews() {
           <div>
             <p className="eyebrow eyebrow-light">Tenant reviews</p>
             <h2 id="rev-title">Why teams rent their ADGM office with Aegis</h2>
-            <p>Reviews as published on <a href={`${MAIN_SITE}/`}>aegiscoworking.ae</a>.</p>
+            <p>Two of our member reviews — <a href={BUSINESS.mapsUrl} target="_blank" rel="noopener noreferrer">read more on Google</a>.</p>
           </div>
           <div className="rev-nav">
             <button type="button" onClick={() => scroll(-1)} aria-label="Previous reviews"><Icon name="arrow" size={18} /></button>
@@ -47,32 +47,6 @@ export function Reviews() {
   )
 }
 
-export function Guides() {
-  return (
-    <section className="guides sec" id="guides" aria-labelledby="guides-title">
-      <div className="wrap">
-        <div className="head head-row">
-          <div>
-            <p className="eyebrow">From the Aegis blog</p>
-            <h2 id="guides-title">ADGM office rent guides</h2>
-          </div>
-          <p>Costs, leases, licence rules and locations — read before you sign for office space in Abu Dhabi Global Market. <a href={`${MAIN_SITE}/blogs`}>All articles</a></p>
-        </div>
-        <ul className="g-list">
-          {guides.map((g, i) => (
-            <Reveal as="li" key={g.slug} variant="flip" delay={(i % 3) * 80}>
-              <a href={g.url}>
-                <span className="g-tag">{g.tag}</span>
-                <span className="g-title">{g.title}</span>
-                <span className="g-go" aria-hidden="true"><Icon name="arrow" size={16} /></span>
-              </a>
-            </Reveal>
-          ))}
-        </ul>
-      </div>
-    </section>
-  )
-}
 
 export function FAQ() {
   const [open, setOpen] = useState(0)
@@ -110,8 +84,7 @@ export function Location() {
           <p className="eyebrow">Office rental Al Reem Island</p>
           <h2 id="loc-title">ADGM office at Addax Tower, Al Reem Island</h2>
           <p className="loc-sub">
-            Office rental on Al Reem Island at Addax Tower puts your company inside the ADGM jurisdiction.{' '}
-            <a href={`${MAIN_SITE}/blog/is-al-reem-island-part-of-adgm`}>Is Al Reem Island part of ADGM?</a>
+            Office rental on Al Reem Island at Addax Tower puts your company inside the ADGM jurisdiction.
           </p>
           <p className="loc-sub">
             Whether you search for an office for rent Al Reem Island companies can register, an office for rent Addax
