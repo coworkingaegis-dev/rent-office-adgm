@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import { Answer, Finder, Options, Perks, Lease, Compare, Gallery } from '../components/Sections'
-import { Reviews, Guides, FAQ, Location, FinalCTA, WhatsAppFab } from '../components/More'
+import { Reviews, FAQ, Location, FinalCTA, WhatsAppFab } from '../components/More'
 import {
   SITE_URL, MAIN_SITE, PAGE_TITLE, PAGE_DESCRIPTION, DATE_PUBLISHED, DATE_MODIFIED,
   BUSINESS, faqs, guides, keywords,
@@ -56,7 +56,7 @@ const schemaGraph = {
     },
     {
       '@type': 'LocalBusiness', '@id': BUSINESS_ID, name: BUSINESS.name, alternateName: 'Aegis Coworking',
-      description: 'Business centre and office space provider in ADGM at Addax Tower, Al Reem Island — private office, dedicated desk, flexi desk, virtual office and meeting room.',
+      description: 'Business centre and office space provider in ADGM at Addax Tower, Al Reem Island — private offices, dedicated desks, flexi desks, virtual offices and meeting rooms.',
       url: MAIN_SITE, logo: `${MAIN_SITE}/logo.png`, image: [OG_IMAGE], telephone: '+971503926316',
       email: BUSINESS.email, priceRange: 'AED 100 – AED 4,500', currenciesAccepted: 'AED',
       address: { '@type': 'PostalAddress', streetAddress: BUSINESS.street, addressLocality: 'Abu Dhabi', addressRegion: 'Abu Dhabi', addressCountry: 'AE' },
@@ -88,10 +88,6 @@ const schemaGraph = {
     {
       '@type': 'FAQPage', '@id': `${SITE_URL}/#faq`,
       mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-    },
-    {
-      '@type': 'ItemList', '@id': `${SITE_URL}/#guides`, name: 'ADGM office rent guides',
-      itemListElement: guides.map((g, i) => ({ '@type': 'ListItem', position: i + 1, name: g.title, url: g.url })),
     },
   ],
 }
@@ -138,7 +134,6 @@ function RentOfficePage() {
         <Compare />
         <Gallery />
         <Reviews />
-        <Guides />
         <FAQ />
         <Location />
         <FinalCTA />
