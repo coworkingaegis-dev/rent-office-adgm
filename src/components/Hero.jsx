@@ -11,12 +11,12 @@ function Hero() {
             <span className="badge-dot" aria-hidden="true" />Office space provider in ADGM · Addax Tower
           </p>
           <h1 id="hero-title" className="hero-title hl" style={{ '--d': 1 }}>
-            Rent an office in Abu Dhabi Global Market, <span className="hl-mark">furnished and licence-ready</span>
+            Rent an office in Abu Dhabi Global Market, <span className="hl-mark">sized to your team</span>
           </h1>
           <p className="hero-lead hl" style={{ '--d': 2 }}>
-            Furnished private offices for 1 to 20+ people on the 38th floor of Addax Tower, Al Reem Island —
-            with a registered ADGM business address, 24/7 access and one all-in monthly rent. Office for rent in
-            ADGM from <strong>AED 4,500</strong>, or rent desk space in ADGM from <strong>AED 1,000</strong>.
+            Tell us your headcount and we match the office: small offices for 1–4 people, medium for 5–10 and
+            large for 10–20+, all furnished on the 38th floor of Addax Tower with a registered ADGM business address
+            and 24/7 access. Office for rent in ADGM from <strong>AED 4,500</strong>; larger teams are priced by layout.
           </p>
           <div className="hero-ctas hl" style={{ '--d': 3 }}>
             <a className="btn btn-primary" href={`${BUSINESS.whatsapp}?text=${encodeURIComponent('Hi Aegis, I would like to rent an office in ADGM.')}`} target="_blank" rel="noopener noreferrer">Book a viewing</a>
