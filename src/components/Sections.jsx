@@ -19,9 +19,9 @@ export function Answer() {
             cleaning and reception included.
           </p>
           <p>
-            That makes <a href={`${MAIN_SITE}/private-office`}>Aegis</a> an affordable office space ADGM option
+            That makes Aegis an affordable office space ADGM option
             next to a traditional commercial lease: no fit-out, no deposit and an ADGM registered office address
-            included. For a deeper breakdown, try the <a href={`${MAIN_SITE}/blog/adgm-office-cost-calculator`}>ADGM office cost calculator</a>.
+            included.
           </p>
         </Reveal>
         <nav className="toc" aria-label="On this page">
@@ -115,7 +115,7 @@ export function Perks() {
           <h2 id="perks-title">A furnished office in ADGM, serviced for you</h2>
           <p>Every private office at Aegis is a serviced office Abu Dhabi teams can rely on — a furnished office ADGM companies move into on day one, with one monthly rent covering what a traditional lease bills separately.</p>
           <figure className="perks-photo">
-                         <img src={images.mediumImg} alt="Furnished private office for rent in ADGM at Aegis Coworking, Addax Tower" width="700" height="700" loading="lazy" decoding="async" />
+            <img src={images.boardroomImg} alt="Boardroom in Aegis Coworking business centre in ADGM, Addax Tower" width="1024" height="683" loading="lazy" decoding="async" />
           </figure>
         </div>
         <ul className="perk-list">
@@ -220,10 +220,6 @@ export function Compare() {
             </tbody>
           </table>
         </Reveal>
-        <p className="fine">
-          Comparing locations too? See <a href={`${MAIN_SITE}/blog/adgm-vs-difc-workspace-cost`}>ADGM vs DIFC workspace cost</a>, or
-          get a <a href="https://servicedofficeadgm.online/">virtual office in ADGM</a> if you only need the address.
-        </p>
       </div>
     </section>
   )
